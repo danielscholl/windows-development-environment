@@ -1,4 +1,4 @@
-# Configure Windows
+## Configure Windows
 Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowProtectedOSFiles -EnableShowFileExtensions -EnableShowFullPathInTitleBar
 
 Update-ExecutionPolicy Unrestricted
@@ -8,11 +8,11 @@ cinst -y Microsoft-Hyper-V-All -source windowsFeatures
 # Packages
 # cinst -y cmder -pre  ##  console emulator on Windows
 cinst -y hyper  ## JS/HTML/CSS Terminal
-cinst -y Gow    ## GNU for Windows
+#cinst -y Gow    ## GNU for Windows
 
 ## Git
-cinst -y git.install
-cinst -y poshgit
+#cinst -y git.install
+#cinst -y poshgit
 cinst -y git-credential-winstore
 
 ## Node, npm
