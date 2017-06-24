@@ -3,28 +3,32 @@ Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowProtec
 
 Update-ExecutionPolicy Unrestricted
 
+## Editors
+cinst -y visualstudiocode
+
+## Visual Studio 2017
+cinst -y install visualstudio2017community 
+if (Test-PendingReboot) { Invoke-Reboot }
+
+## Visual Studio 2015
+#cinst -y visualstudio2015community
+#if (Test-PendingReboot) { Invoke-Reboot }
+
+## Git
+cinst -y poshgit
+cinst -y Git-Credential-Manager-for-Windows
+
 
 # Packages
 cinst -y hyper  ## JS/HTML/CSS Terminal
 #cinst -y Gow    ## GNU for Windows
 
-## Git
-#cinst -y poshgit
-cinst -y git-credential-winstore
 
 ## Node, npm
 cinst -y nodejs.install
 npm install -g npm-windows-upgrade
 cinst -y nvm
 
-## Editors
-cinst -y visualstudiocode
-
-## Visual Studio 2015
-#cinst -y visualstudio2015community
-#if (Test-PendingReboot) { Invoke-Reboot }
-
-if (Test-PendingReboot) { Invoke-Reboot }
 
 ## Basics
 cinst -y GoogleChrome
