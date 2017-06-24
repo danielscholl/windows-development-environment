@@ -30,7 +30,6 @@ cinst -y hyper  ## JS/HTML/CSS Terminal
 
 ## Node, npm
 cinst -y nodejs.install
-npm install -g npm-windows-upgrade
 cinst -y nvm
 
 
